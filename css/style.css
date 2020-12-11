@@ -3,16 +3,47 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  background-image: url('https://www.pngarts.com/files/6/Falling-Confetti-PNG-Photo.png');
+  background-position: 50% 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: coriandoli 1s linear infinite;
+  font-family: 'Roboto', sans-serif;
+}
+@keyframes coriandoli {
+  from{
+    background-position: 50% 0;
+  }
+  to{
+    background-position: 50% 100%;
+  }
+}
 .container{
   background-color: #001632;
   width: 800px;
-  height: 500px;
+  height: 700px;
   margin: 200px auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   text-align: center;
+}
+.emojy{
+  height: 210px;
+}
+.emojy img {
+  height: 150px;
+  animation: emojy 3s linear infinite;
+}
+@keyframes emojy {
+  from{
+    height: 150px;
+  }
+  to{
+    height: 200px;
+  }
 }
 #testo{
   margin-top: 50px;
@@ -21,7 +52,7 @@
 }
 .password-box{
   background-color: white;
-  width: 500px;
+  width: 700px;
   text-align: center;
   padding: 50px;
 }
